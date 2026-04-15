@@ -28,4 +28,12 @@ jobs:
     - name: Run Tests
       run: |
         python manage.py test
-        
+
+    - name: Install Linting Tool
+      run: |
+        pip install flake8
+
+    - name: Run Linter
+      run: |
+        flake8 .
+            
