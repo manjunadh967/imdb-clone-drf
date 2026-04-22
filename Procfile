@@ -1,1 +1,1 @@
-web: gunicorn IMDB-Clone-DRF.wsgi
+web: gunicorn watchmate.wsgi
