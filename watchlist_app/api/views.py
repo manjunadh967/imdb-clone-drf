@@ -1,4 +1,4 @@
-from django.shortcuts import get_object_or_404
+from django.shortcuts import render, get_object_or_404
 from django_filters.rest_framework import DjangoFilterBackend
 
 
@@ -27,6 +27,8 @@ from watchlist_app.api.throttling import (ReviewCreateThrottle,
 from watchlist_app.models import Review, StreamPlatform, WatchList
 
 
+def home(request):
+    return render(request, 'home.html')
 
 class UserReview(generics.ListAPIView):
 

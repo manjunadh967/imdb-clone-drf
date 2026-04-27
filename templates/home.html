@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IMDB Clone API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #f1f5f9;
+            text-align: center;
+            padding: 40px;
+        }
+
+        h1 {
+            color: #38bdf8;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .section {
+            margin: 30px 0;
+        }
+
+        a {
+            display: block;
+            background: #1e293b;
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #e2e8f0;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            background: #38bdf8;
+            color: black;
+        }
+
+        .title {
+            font-weight: bold;
+            margin-top: 20px;
+            color: #facc15;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🎬 IMDB Clone API</h1>
+    <p>Visit the below links for specific functionality</p>
+
+    <div class="section">
+        <div class="title">🎥 Watchlist APIs</div>
+        <a href="watch/list/">List Movies</a>
+        <a href="watch/list2/">List Movies (Generic View)</a>
+        <a href="watch/1/">Movie Detail (replace ID)</a>
+    </div>
+
+    <div class="section">
+        <div class="title">📺 Streaming Platforms</div>
+        <a href="watch/stream/">All Platforms</a>
+        <a href="watch/stream/1/">Platform Detail (replace ID)</a>
+    </div>
+
+    <div class="section">
+        <div class="title">⭐ Reviews</div>
+        <a href="watch/1/review-create/">Create Review (replace ID)</a>
+        <a href="watch/1/reviews/">Movie Reviews (replace ID)</a>
+        <a href="watch/review/1/">Review Detail</a>
+        <a href="watch/reviews/">User Reviews</a>
+    </div>
+
+    <div class="section">
+        <div class="title">🔐 Authentication</div>
+        <a href="account/login/">Login</a>
+        <a href="account/register/">Register</a>
+        <a href="account/logout/">Logout</a>
+    </div>
+
+</div>
+
+</body>
+</html>
